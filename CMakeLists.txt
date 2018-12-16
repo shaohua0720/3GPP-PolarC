@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.2)
+PROJECT(PolarCEncoder)
+include_directories("/opt/local/include")
+link_directories("/opt/local/lib")
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+ADD_EXECUTABLE(${PROJECT_NAME} main.c utils.c PDCCH_encoder.c)
+#target_link_libraries(${PROJECT_NAME} gsl gslcblas)
