@@ -47,34 +47,3 @@ uint8_t PDCCH_enc(uint8_t *info, //original data
     }
     return 0;
 }
-/*
-int main(void)
-{
-    printf("\n Test of get_3GPP_info_bit_pattern --->begin\n");
-    uint32_t P=24;
-    uint32_t i=0;
-    uint32_t K=15; //info bits
-    uint32_t E=6*12*2; // encoded bits
-    printf("N=%d\n",N);
-    
-    
-
-  
-    for(i=0;i<N;i++)
-      {
-	printf("%d:%d  ",i,info_bit_pattern_t[i]);
-      }
-      printf("\n");  
-  
-
-#ifdef debug
-    printf("\n");
-    for(i=0;i<E;i++) {
-      printf("%d ",e[i]);
-    }
-    printf("\n");
-#endif
-    
-    return 0;
-}
-*/
